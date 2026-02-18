@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h1>Payment form</h1>
+        <p>Please complete all required (*) fields.</p>
+        <section>
+            <h2>Contact information</h2>
+            <fieldset>
+                <legend>Title</legend>
+                <ul>
+                    <li>
+                        <label for="title_1">
+                            <input type="radio" name="title" id="title_1" value="A" />
+                            Ace
+                        </label>
+                    </li>
+                    <li>
+                        <label for="title_2">
+                            <input type="radio" name="title" id="title_2" value="K" />
+                            King
+                        </label>
+
+                    <li>
+                        <label for="title_3">
+                            <input type="radio" name="title" id="title_3" value="Q" />
+                            Queen
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <p>
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="username" required />
+            </p>
+            <p>
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="user-mail" required />
+            </p>
+            <p>
+                <label for="pwd">Password *</label>
+                <input type="password" id="pwd" name="password" required />
+            </p>
+        </section>
+    </form>
+</body>
+</html>
