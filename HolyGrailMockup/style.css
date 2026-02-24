@@ -89,3 +89,58 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 4px;
+    grid-template-areas:
+    "header header"
+    "sidebar nav"
+    "sidebar article"
+    "footer footer";
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.header .logo {
+    justify-self: start;
+}
+
+.menu ul {
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   list-style-type: none;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    gap: 50px;
+    text-align: center;
+}
+  
+.nav {
+    grid-area: nav;
+}
+.nav ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+}
+.article {
+    grid-area: article;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.card {
+    height: 200px;
+}
+.footer {
+    grid-area: footer;
+}
